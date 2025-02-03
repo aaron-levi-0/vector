@@ -60,7 +60,7 @@ void* vector_at(const Vector* vec, size_t index)
 	*/
     if (index >= vec->size) {
         fprintf(stderr, "Index out of bounds!\n");
-        return;
+        return NULL;
     }
     return (char*)vec->data + index * vec->elem_size;
 }
